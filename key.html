@@ -36,7 +36,37 @@
     <h1>Please Subscribe my YouTube channel</h1>
     <p>Hamster Kombat Game Key generator. Create by Alfaz Infosec.</p>
 </body>
-</html>ওয়ালাইকুম 
+<div class="modal" id="subscriptionModal">
+        <div class="modal-content">
+            <p>Have you subscribed to my YouTube channel?</p>
+            <button onclick="redirect()">Yes</button>
+        </div>
+    </div>
+
+    <script>
+        function showModal() {
+            document.getElementById('subscriptionModal').style.display = 'flex';
+        }
+
+        function redirect() {
+            window.location.href = 'https://alfazinfo.github.io/Hamster_key/key.html';
+        }
+
+        // Show the modal every 5 minutes
+        setInterval(showModal, 5 * 60 * 1000); // 5 minutes in milliseconds
+
+        // Disable right-click and view-source (for basic protection)
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        document.onkeydown = function(e) {
+            if (e.ctrlKey && (e.key === 'u' || e.key === 'U')) {
+                e.preventDefault();
+            }
+        };
+    </script>
+</body>
+</html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
