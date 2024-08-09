@@ -4,264 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hamster Kombat Keygen</title>
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <title>Hamster kombat key</title>
     <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            border: 0;
-        }
-        html {
-            height: 100%;
-        }
-        body {
-            padding-bottom: 120px;
-            padding-top: 60px;
-            font-size: 24px;
-            color: aliceblue;
-            font-family: sans-serif;
-            font-weight: bold;
-            min-height: 100%;
-            background: url(https://georg95.github.io/hamster-bike-keygen/keygen_bg.jpg);
-            background-position: center;
-            background-size: cover;
-            display: flex;
-            flex-direction: column;
-        }
-        header, footer {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 60px;
-            background: rgba(0, 0, 0, 0.8);
-        }
-        .keys {
-            display: flex;
-            flex: 1;
-            flex-direction: column;
-            justify-content: end;
-            align-items: center;
-        }
-        .error {
-            font-family: monospace;
-            background: rgba(0, 0, 0, 0.8);
-            margin: 10px;
-            padding: 10px;
-            color: coral;
-            font-size: 12px;
-            word-break: break-all;
-        }
-        .key-container {
-            font-family: monospace;
-            background: rgba(0, 0, 0, 0.8);
-            margin: 10px;
-            display: flex;
-        }
-        .key {
-            font-size: 20px;
-            cursor: pointer;
-            padding: 10px 15px;
-        }
-        .delete-key {
-            margin: 0 15px;
-            border: 0;
-            background: none;
-            cursor: pointer;
-        }
-        .diamond-emoji {
-            display: flex;
-            justify-content: end;
-            width: 100px;
-        }
-        .diamond-count {
-            display: block;
-            width: 150px;
-            margin-left: 10px;
-        }
-        footer {
-            display: flex;
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            box-sizing: border-box;
-            padding: 20px;
-            justify-self: flex-end;
-            height: 120px;
-            background: rgba(0, 0, 0, 0.8);
-        }
-        select {
-            flex: 1;
-            height: 100%;
-            font-size: 24px;
-            font-weight: bold;
-            margin-right: 15px;
-        }
-        .key-condition {
-            white-space: nowrap;
-        }
-        .key-button {
-            flex: 2;
-            cursor: pointer;
-            font-size: 24px;
-            font-weight: bold;
-            height: 100%;
-            width: 100%;
-        }
-        iframe {
-            width: 0;
-            height: 0;
-            visibility: hidden;
-        }
+      html, body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        border: 0;
+        background: black;
+        color: white;
+        font-family: sans-serif;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .subscribe-container {
+        text-align: center;
+      }
+      .subscribe-message {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+      .subscribe-button {
+        font-size: 18px;
+        padding: 10px 20px;
+        background-color: #FF0000;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      .subscribe-button img {
+        height: 20px;
+        margin-right: 10px;
+        vertical-align: middle;
+      }
     </style>
-</head>
-<body>
-    <header>
-        <span class="diamond-emoji">💎</span>
-        <span class="diamond-count">...</span>
-    </header>
-    <div class="keys">
-        <div class="keys"></div>
-    </div>
-    <iframe sandbox="allow-scripts" onload="iframeLoaded()" src="safe-fetch.html"></iframe>
-    <footer>
-        <select id="select-mode">
-            <option value="BIKE">🚲 BIKE</option>
-            <option value="CLONE">👥 CLONE</option>
-            <option value="CUBE">🎲 CUBE</option>
-            <option value="TRAIN">🚂 TRAIN</option>
-        </select>
-        <button id="key-button" class="key-button">Get key 🔑 <span class="key-condition">💎100</span></button>
-    </footer>
     <script>
-        const CONFIG = {
-            BIKE: {
-                appToken: 'd28721be-fd2d-4b45-869e-9f253b554e50',
-                promoId: '43e35910-c168-4634-ad4f-52fd764a843f'
-            },
-            CLONE: {
-                appToken: '74ee0b5b-775e-4bee-974f-63e7f4d5bacb',
-                promoId: 'fe693b26-b342-4159-8808-15e3ff7f8767'
-            },
-            CUBE: {
-                appToken: 'd1690a07-3780-4068-810f-9b5bbf2931b2',
-                promoId: 'b4170868-cef0-424f-8eb9-be0622e8e8e3'
-            },
-            TRAIN: {
-                appToken: '82647f43-3f87-402d-88dd-09a90025313f',
-                promoId: 'c4480ac7-e178-4973-8061-9ed5b2e17954'
+        document.addEventListener('contextmenu', event => event.preventDefault());
+        document.addEventListener('keydown', event => {
+            if (event.ctrlKey && event.key === 'u') {
+                event.preventDefault();
+                alert("View source is disabled!");
+            }
+        });
+
+        function checkSubscription() {
+            // Replace this condition with your actual subscription checking logic
+            const isSubscribed = confirm("Are you subscribed to @alfazinfosec YouTube channel?");
+            if (!isSubscribed) {
+                alert("You must subscribe to the YouTube channel to proceed.");
+                window.location.reload();
+            } else {
+                document.querySelector('.main-content').style.display = 'block';
+                document.querySelector('.subscribe-container').style.display = 'none';
+                window.open('https://alfazinfo.github.io/Hamster_key/key.html', '_blank');
             }
         }
 
-        let APP_TOKEN = CONFIG.BIKE.appToken
-        let PROMO_ID = CONFIG.BIKE.promoId
-        let DIAMONDS = 0
-        const MAX_KEYS_PER_DAY = 15
-        let keysGeneratedToday = 0
-
-        document.addEventListener('DOMContentLoaded', start)
-
-        async function start() {
-            document.querySelector('#key-button').addEventListener('click', async () => {
-                if (keysGeneratedToday >= MAX_KEYS_PER_DAY) {
-                    showError('You have reached the maximum number of keys for today.', 15000)
-                    return
-                }
-                const key = await getKey()
-                if (!key) return
-                keysGeneratedToday++
-                await putKey(key)
-                displayKey(key)
-            })
-        }
-
-        function selectedMode() {
-            const select = document.querySelector('#select-mode')
-            return select.options[select.selectedIndex].value || 'BIKE'
-        }
-
-        async function getKey() {
-            try {
-                const mode = selectedMode()
-                const userData = {
-                    login: 'test_login', // Use test login or actual login
-                    mode: mode
-                }
-                const response = await vmFetch('https://v94015.hosted-by-vdsina.com/getkey', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(userData)
-                })
-                if (response.status === 'ok') {
-                    return response.key
-                } else {
-                    showError('Failed to get key: ' + response.reason)
-                    return null
-                }
-            } catch (e) {
-                showError('Error fetching key: ' + e.message)
-                return null
-            }
-        }
-
-        async function putKey(key) {
-            try {
-                const keyData = {
-                    login: 'test_login', // Use test login or actual login
-                    key: key
-                }
-                await vmFetch('https://v94015.hosted-by-vdsina.com/putkey', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(keyData)
-                })
-            } catch (e) {
-                showError('Error saving key: ' + e.message)
-            }
-        }
-
-        function displayKey(key) {
-            const keyContainer = document.createElement('div')
-            keyContainer.className = 'key-container'
-            keyContainer.innerHTML = `<div class="key">${key}</div><button class="delete-key" onclick="this.parentElement.remove()">❌</button>`
-            document.querySelector('.keys').appendChild(keyContainer)
-        }
-
-        function showError(message, timeout = 5000) {
-            const errorDiv = document.createElement('div')
-            errorDiv.className = 'error'
-            errorDiv.textContent = message
-            document.body.appendChild(errorDiv)
-            setTimeout(() => document.body.removeChild(errorDiv), timeout)
-        }
-
-        function iframeLoaded() {
-            console.log('Iframe loaded')
-        }
-
-        function vmFetch(url, options, timeout = 5000) {
-            return new Promise((resolve, reject) => {
-                const timer = setTimeout(() => reject(new Error('Request timed out')), timeout)
-                fetch(url, options)
-                    .then(response => response.json())
-                    .then(result => {
-                        clearTimeout(timer)
-                        resolve(result)
-                    })
-                    .catch(error => {
-                        clearTimeout(timer)
-                        reject(error)
-                    })
-            })
+        window.onload = function() {
+            checkSubscription();
         }
     </script>
+</head>
+<body>
+  <div class="subscribe-container">
+    <div class="subscribe-message">Subscribe my YouTube channel for new updates</div>
+    <button class="subscribe-button" onclick="window.open('https://www.youtube.com/@alfazinfosec', '_blank'); checkSubscription();">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Subscribe Now
+    </button>
+  </div>
+  <div class="main-content" style="display: none;">
+    <!-- Your main content goes here -->
+    <!-- Copy the previous HTML code and paste it here -->
+  </div>
 </body>
 </html>
