@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamster kombat key</title>
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        border: 0;
+        background: black;
+        color: white;
+        font-family: sans-serif;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .subscribe-container {
+        text-align: center;
+      }
+      .subscribe-message {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+      .subscribe-button {
+        font-size: 18px;
+        padding: 10px 20px;
+        background-color: #FF0000;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      .subscribe-button img {
+        height: 20px;
+        margin-right: 10px;
+        vertical-align: middle;
+      }
+    </style>
+    <script>
+        document.addEventListener('contextmenu', event => event.preventDefault());
+        document.addEventListener('keydown', event => {
+            if (event.ctrlKey && event.key === 'u') {
+                event.preventDefault();
+                alert("View source is disabled!");
+            }
+        });
+
+        function checkSubscription() {
+            // Replace this condition with your actual subscription checking logic
+            const isSubscribed = confirm("Are you subscribed to @alfazinfosec YouTube channel?");
+            if (!isSubscribed) {
+                alert("You must subscribe to the YouTube channel to proceed.");
+                window.location.reload();
+            } else {
+                document.querySelector('.main-content').style.display = 'block';
+                document.querySelector('.subscribe-container').style.display = 'none';
+                window.open('https://alfazinfo.github.io/Hamster_key/key.html', '_blank');
+            }
+        }
+
+        window.onload = function() {
+            checkSubscription();
+        }
+    </script>
+</head>
+<body>
+  <div class="subscribe-container">
+    <div class="subscribe-message">Subscribe my YouTube channel for new updates</div>
+    <button class="subscribe-button" onclick="window.open('https://www.youtube.com/@alfazinfosec', '_blank'); checkSubscription();">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> Subscribe Now
+    </button>
+  </div>
+  <div class="main-content" style="display: none;">
+    <!-- Your main content goes here -->
+    <!-- Copy the previous HTML code and paste it here -->
+  </div>
+</body>
+</html>
